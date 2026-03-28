@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for Everyone</title>
+<link rel="icon" type="image/png" href="favicon.png">
+ <link rel="stylesheet" href="Style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+</head>
+<body>
+<div class="container">
+ <div class="left">
+   <div class="close"><svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+  <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg></div>
+  <div class="logo">
+    <img src="Loge.png" alt="logo">
+  </div>
+
+  <ul class="menu">
+    <li class="menu-item">
+      <img src="4.jpg" alt="Search">
+      Search</li>
+    <li class="menu-item">
+      <img src="5.jpg" alt="Home">
+    
+   Home </li>
+  </ul>
+<div class="head">
+
+  <span class="lib">  <img src="Lib.jpg"alt="Library">Your Library</span>
+  <ul id="songList">
+    <li>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/>
+</svg>
+<div class="info">
+  <div>Song Name </div>
+  <div>Song Artist</div>
+</div>
+<span>Play</span>
+      <svg id="play" width="40" height="40" viewBox="0 0 24 24" fill="white">
+  <path d="M8 5v14l11-7z"/>
+</svg>
+    </li>
+    
+  </ul>
+
+  </div>
+    <footer class="footer">
+  
+    <div><a href="#">Legal</a></div>
+    <div><a href="#">Safety & Privacy Center</a></div>
+   <div><a href="#">Privacy Policy</a></div> 
+   <div> <a href="#">Cookies</a></div>
+   <div> <a href="#">About us</a></div>
+    <div><a href="#">Accessibility</a></div>
+  
+
+ <div class="language-btn">
+    <i class="fa-solid fa-globe"></i>
+    <span>English</span>
+  </div>
+</footer>
+</div>
+<div class="right">
+ <div class="header">
+   <div class="nav"> 
+   <svg class="humbergar"width="30" height="30" viewBox="0 0 24 24" fill="none">
+  <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+   <img class="mg" src="arrow-right.png" alt="right">
+    <img class="mg" src="left-arrow.png" alt="left">
+    </div>
+    <div class="btn">
+    <button class="login">Login In</button>
+<button class="signin">Sign In</button>
+</div>
+</div>
+<div class="shoptify-playlist">
+  <h1>Spotify Playlist</h1>
+  <div class="card-countiner">
+    <div class="card">
+      <svg  class="play"width="50" height="50" viewBox="0 0 24 24" fill="black">
+  <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+  <polygon points="10,8 16,12 10,16" fill="black"/>
+</svg>
+    <img src="First.jpg" alt="photo">
+    <h2>Bairan</h2>
+    <p>Banjaare</p>
+  </div>
+
+      <div class="card">
+              <svg  class="play"width="50" height="50" viewBox="0 0 24 24" fill="black">
+  <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+  <polygon points="10,8 16,12 10,16" fill="black"/>
+</svg>
+    <img src="car.jpeg" alt="photo">
+    <h2>Bairan</h2>
+    <p>Banjaare</p>
+  </div>
+</div>
+<div class="playbar">
+  <div class="songinfo">
+  <div class="songname"></div>
+
+  <div class="playbtn">
+  <svg id="nextBtn"width="40" height="40" viewBox="0 0 24 24" fill="white">
+  <path d="M6 6h2v12H6zm3.5 6L18 18V6z"/>
+</svg>
+<svg id="playBtn" width="40" height="40" viewBox="0 0 24 24" fill="white">
+  <path d="M8 5v14l11-7z"/>
+</svg>
+<svg id="pauseBtn" width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="5" width="4" height="14" rx="1"/>
+  <rect x="14" y="5" width="4" height="14" rx="1"/>
+</svg>
+<svg id="prevBtn" width="40" height="40" viewBox="0 0 24 24" fill="white">
+  <path d="M16 6h2v12h-2zM6 6v12l8.5-6z"/>
+</svg>
+</div>
+
+  <div class="seekbar">
+    <div class="circle"> </div>
+  </div>
+  
+<div class="timer"></div>
+<div class="center">
+<div class="volume"> 
+<svg id="vol"height="40" width="24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+  </svg>
+<svg id="muteIcon" height="40" width="24" viewBox="0 0 24 24" fill="white" style="display:none;">
+  <path d="M3 9v6h4l5 5V4L7 9H3z"/>
+  <line x1="16" y1="8" x2="22" y2="16" stroke="white" stroke-width="2"/>
+  <line x1="22" y1="8" x2="16" y2="16" stroke="white" stroke-width="2"/>
+</svg>
+<input id="ran" type="range" name="volume">
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+     <script src="Logic.js"></script> 
+</body>
+</html>
